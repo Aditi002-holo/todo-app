@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="{{ url_for('static', filename='/images/rectangle-list-regular.svg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+
+    <title>TODO App</title>
+</head>
+<body>
+    <main class="main">
+        <h1 class="header">LIST YOUR TODOs</h1>
+
+        <section class="input-section">
+            <input type="text" class="task-input" id="task-input" placeholder="What do you want to achieve today?">
+            <button class="add-btn" id="add-btn">ADD</button>
+        </section>
+        <p id="err-message"></p>
+
+        <section class="display-section"></section>
+        <p id="err-message"></p>
+    </main>
+
+    <script src="static/index.js"></script>
+</body>
+</html>
